@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import org.bobocode.annotation.Column;
+import org.bobocode.annotation.Id;
 import org.bobocode.annotation.Table;
 
 /**
@@ -15,11 +16,12 @@ import org.bobocode.annotation.Table;
 @Setter
 @ToString
 public class Person {
+    @Id
+    @Column(name = "id")
+    private Long id;
     @Column(name = "first_name")
     private String firstName;
     @Column(name = "last_name")
-    private String secondName;
-    @Column(name = "id")
-    private Integer id;
+    private String lastName;
 
 }

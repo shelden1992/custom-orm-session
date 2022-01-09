@@ -13,11 +13,11 @@ CREATE TABLE IF NOT EXISTS public.person
     UNIQUE (email)
 );
 
-CREATE TABLE public.note
-(
-    id        SERIAL NOT NULL,
-    body      TEXT,
-    person_id BIGINT,
-    PRIMARY KEY (id),
-    FOREIGN KEY (person_id) REFERENCES public.person (id)
-);
+-- CREATE TABLE public.note
+-- (
+--     id        SERIAL NOT NULL,
+--     body      TEXT,
+--     person_id BIGINT,
+--     PRIMARY KEY (id),
+--     FOREIGN KEY (person_id) REFERENCES public.person (id)
+-- );
